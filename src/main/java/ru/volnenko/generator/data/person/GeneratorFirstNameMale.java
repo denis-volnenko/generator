@@ -1,12 +1,15 @@
 package ru.volnenko.generator.data.person;
 
+import lombok.NonNull;
 import ru.volnenko.generator.api.IGeneratorName;
 import ru.volnenko.generator.util.RandomUtil;
 
 public final class GeneratorFirstNameMale implements IGeneratorName {
 
+    @NonNull
     public static final GeneratorFirstNameMale INSTANCE = new GeneratorFirstNameMale();
 
+    @NonNull
     private final static String[] DATA = new String[] {
             "Сергей", "Иван", "Антон", "Николай", "Петр", "Федор",
             "Павел", "Максим", "Владимир", "Вадим", "Вячеслав", "Василий",
@@ -16,6 +19,7 @@ public final class GeneratorFirstNameMale implements IGeneratorName {
             "Евгений", "Тимур", "Эдуард", "Кирилл", "Ярослав"
     };
 
+    @NonNull
     public static GeneratorFirstNameMale getInstance() {
         return INSTANCE;
     }
@@ -23,6 +27,7 @@ public final class GeneratorFirstNameMale implements IGeneratorName {
     private GeneratorFirstNameMale() {
     }
 
+    @NonNull
     public String generate() {
         return RandomUtil.random(DATA);
     }

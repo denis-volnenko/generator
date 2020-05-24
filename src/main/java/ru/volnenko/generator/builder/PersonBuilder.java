@@ -1,33 +1,38 @@
 package ru.volnenko.generator.builder;
 
+import lombok.NonNull;
 import ru.volnenko.generator.model.Gender;
 import ru.volnenko.generator.model.Person;
 
 public final class PersonBuilder {
 
+    @NonNull
     private Person person = new Person();
 
-    public PersonBuilder withPerson(Person person) {
+    public PersonBuilder withPerson(@NonNull Person person) {
         this.person = person;
         return this;
     }
 
+    @NonNull
     public PersonBuilder male() {
         person.setGender(Gender.MALE);
         return this;
     }
 
+    @NonNull
     public PersonBuilder female() {
         person.setGender(Gender.FEMALE);
         return this;
     }
 
-    public PersonBuilder withFirstName(String firstName) {
+    @NonNull
+    public PersonBuilder withFirstName(@NonNull String firstName) {
         person.setFirstName(firstName);
         return this;
     }
 
-    public PersonBuilder withLastName(String lastName) {
+    public PersonBuilder withLastName(@NonNull String lastName) {
         person.setLastName(lastName);
         return this;
     }

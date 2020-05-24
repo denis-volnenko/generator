@@ -1,5 +1,6 @@
 package ru.volnenko.generator;
 
+import lombok.NonNull;
 import ru.volnenko.generator.data.person.*;
 import ru.volnenko.generator.model.Person;
 
@@ -15,6 +16,7 @@ public final class Generator {
      * Генерация UUID
      * @return
      */
+    @NonNull
     public static String uuid() {
         return UUID.randomUUID().toString();
     }
@@ -23,6 +25,7 @@ public final class Generator {
      * Генерация Timestamp
      * @return
      */
+    @NonNull
     public static Long timestamp() {
         return System.currentTimeMillis();
     }
@@ -31,6 +34,7 @@ public final class Generator {
      * Генерация текущей даты
      * @return
      */
+    @NonNull
     public static Date now() {
         return new Date();
     }
@@ -39,6 +43,7 @@ public final class Generator {
      * Генерация случайного имени
      * @return
      */
+    @NonNull
     public static String firstName() {
         return GeneratorFirstName.getInstance().generate();
     }
@@ -47,6 +52,7 @@ public final class Generator {
      * Генерация случайного мужского имени
      * @return
      */
+    @NonNull
     public static String firstNameMale() {
         return GeneratorFirstNameMale.getInstance().generate();
     }
@@ -55,6 +61,7 @@ public final class Generator {
      * Генерация случаного женского имени
      * @return
      */
+    @NonNull
     public static String firstNameFemale() {
         return GeneratorFirstNameFemale.getInstance().generate();
     }
@@ -63,6 +70,7 @@ public final class Generator {
      * Генерация случайной фамилии
      * @return
      */
+    @NonNull
     public static String lastName() {
         return GeneratorLastName.getInstance().generate();
     }
@@ -71,6 +79,7 @@ public final class Generator {
      * Генерация случайной мужской фамилии
      * @return
      */
+    @NonNull
     public static String lastNameMale() {
         return GeneratorLastNameMale.getInstance().generate();
     }
@@ -79,30 +88,37 @@ public final class Generator {
      * Генерация случайной женской фамилии
      * @return
      */
+    @NonNull
     public static String lastNameFemale() {
         return GeneratorLastNameFemale.getInstance().generate();
     }
 
+    @NonNull
     public static String shortName() {
         return GeneratorShortName.getInstance().generate();
     }
 
+    @NonNull
     public static String shortNameMale() {
         return GeneratorShortNameMale.getInstance().generate();
     }
 
+    @NonNull
     public static String shortNameFemale() {
         return GeneratorShortNameFemale.getInstance().generate();
     }
 
+    @NonNull
     public static String usualName() {
         return GeneratorUsualName.getInstance().generate();
     }
 
+    @NonNull
     public static String usualNameMale() {
         return GeneratorUsualNameMale.getInstance().generate();
     }
 
+    @NonNull
     public static String usualNameFemale() {
         return GeneratorUsualNameFemale.getInstance().generate();
     }
@@ -111,6 +127,7 @@ public final class Generator {
      * Генерация случайной карточки
      * @return
      */
+    @NonNull
     public static Person person() {
         return GeneratorPerson.getInstance().generate();
     }
@@ -119,6 +136,7 @@ public final class Generator {
      * Генерация мужской карточки
      * @return
      */
+    @NonNull
     public static Person male() {
         return GeneratorPersonMale.getInstance().generate();
     }
@@ -127,6 +145,7 @@ public final class Generator {
      * Генерация женской карточки
      * @return
      */
+    @NonNull
     public static Person female() {
         return GeneratorPersonFemale.getInstance().generate();
     }

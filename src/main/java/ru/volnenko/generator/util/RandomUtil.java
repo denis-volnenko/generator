@@ -1,5 +1,7 @@
 package ru.volnenko.generator.util;
 
+import lombok.NonNull;
+
 import java.util.Random;
 
 public final class RandomUtil {
@@ -7,7 +9,8 @@ public final class RandomUtil {
     private RandomUtil() {
     }
 
-    public static <T> T random(T... values) {
+    @NonNull
+    public static <T> T random(@NonNull T... values) {
         final int index = RandomUtil.random(0, values.length -1);
         return values[index];
     }
