@@ -94,4 +94,16 @@ public final class Generator {
         return GeneratorShortNameFemale.getInstance().generate();
     }
 
+    public static String usualName() {
+        return GeneratorUsualName.getInstance().generate();
+    }
+
+    public static String usualNameMale() {
+        return GeneratorUsualNameMale.getInstance().generate();
+    }
+
+    public static String usualNameFemale() {
+        return GeneratorUsualNameFemale.getInstance().generate();
+    }
+
 }
