@@ -8,6 +8,14 @@ import ru.volnenko.generator.api.IGeneratorPerson;
 public final class GeneratorGenderFemale implements IGeneratorGender {
 
     @NonNull
+    private static final GeneratorGenderFemale INSTANCE = new GeneratorGenderFemale();
+
+    @NonNull
+    public static GeneratorGenderFemale getInstance() {
+        return INSTANCE;
+    }
+
+    @NonNull
     @Override
     public IGeneratorPerson person() {
         return GeneratorPersonFemale.getInstance();
@@ -23,6 +31,12 @@ public final class GeneratorGenderFemale implements IGeneratorGender {
     @Override
     public IGeneratorName lastName() {
         return GeneratorLastNameFemale.getInstance();
+    }
+
+    @NonNull
+    @Override
+    public IGeneratorName middleName() {
+        return GeneratorMiddleNameFemale.getInstance();
     }
 
 }

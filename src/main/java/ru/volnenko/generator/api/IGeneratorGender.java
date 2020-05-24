@@ -13,4 +13,7 @@ public interface IGeneratorGender {
     @NonNull
     IGeneratorName lastName();
 
+    @NonNull
+    IGeneratorName middleName();
+
 }

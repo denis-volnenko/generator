@@ -123,6 +123,21 @@ public final class Generator {
         return GeneratorUsualNameFemale.getInstance().generate();
     }
 
+    @NonNull
+    public static String fullName() {
+        return GeneratorFullName.getInstance().generate();
+    }
+
+    @NonNull
+    public static String fullNameMale() {
+        return GeneratorFullNameMale.getInstance().generate();
+    }
+
+    @NonNull
+    public static String fullNameFemale() {
+        return GeneratorFullNameFemale.getInstance().generate();
+    }
+
     /**
      * Генерация случайной карточки
      * @return
@@ -148,6 +163,11 @@ public final class Generator {
     @NonNull
     public static Person female() {
         return GeneratorPersonFemale.getInstance().generate();
+    }
+
+    @NonNull
+    public static GeneratorGender gender() {
+        return GeneratorGender.getInstance();
     }
 
 }
