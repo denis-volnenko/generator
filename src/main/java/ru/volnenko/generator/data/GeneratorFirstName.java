@@ -1,9 +1,8 @@
 package ru.volnenko.generator.data;
 
 import ru.volnenko.generator.api.IGenerator;
-import ru.volnenko.generator.util.RandomUtil;
 
-public class GeneratorFirstName implements IGenerator<String> {
+public final class GeneratorFirstName extends AbstractGeneratorName implements IGenerator<String> {
 
     private static final GeneratorFirstName INSTANCE = new GeneratorFirstName();
 
@@ -15,12 +14,11 @@ public class GeneratorFirstName implements IGenerator<String> {
         return INSTANCE;
     }
 
-    private GeneratorFirstName() {
+    protected IGenerator<String>[] getGenerators() {
+        return GENERATORS;
     }
 
-    @Override
-    public String generate() {
-        return RandomUtil.random(GENERATORS).generate();
+    private GeneratorFirstName() {
     }
 
 }
