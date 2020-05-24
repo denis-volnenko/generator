@@ -8,13 +8,18 @@ import ru.volnenko.generator.data.GeneratorFirstNameMale;
 public class GeneratorFirstNameTest {
 
     @Test
+    public void testFirstName() {
+        Assert.assertNotNull(GeneratorFirstNameMale.getInstance().generate());
+    }
+
+    @Test
     public void testFirstNameMale() {
-        Assert.assertNotNull(GeneratorFirstNameMale.generate());
+        Assert.assertNotNull(GeneratorFirstNameMale.getInstance().generate());
     }
 
     @Test
     public void testLastNameFemale() {
-        Assert.assertNotNull(GeneratorFirstNameFemale.generate());
+        Assert.assertNotNull(GeneratorFirstNameFemale.getInstance().generate());
     }
 
 }

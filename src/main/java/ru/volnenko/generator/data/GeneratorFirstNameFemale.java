@@ -1,8 +1,11 @@
 package ru.volnenko.generator.data;
 
+import ru.volnenko.generator.api.IGenerator;
 import ru.volnenko.generator.util.RandomUtil;
 
-public final class GeneratorFirstNameFemale {
+public final class GeneratorFirstNameFemale implements IGenerator<String> {
+
+    private static final GeneratorFirstNameFemale INSTANCE = new GeneratorFirstNameFemale();
 
     private final static String[] DATA = new String[] {
             "Алёна", "Алла", "Анна", "Анастасия", "Вера", "Валерия", "Виктория",
@@ -12,10 +15,14 @@ public final class GeneratorFirstNameFemale {
             "Марина", "Наталья", "Карина"
     };
 
+    public static GeneratorFirstNameFemale getInstance() {
+        return INSTANCE;
+    }
+
     private GeneratorFirstNameFemale() {
     }
 
-    public static String generate() {
+    public String generate() {
         return RandomUtil.random(DATA);
     }
 

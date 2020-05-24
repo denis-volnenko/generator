@@ -1,5 +1,6 @@
 package ru.volnenko.generator;
 
+import ru.volnenko.generator.data.GeneratorFirstName;
 import ru.volnenko.generator.data.GeneratorFirstNameFemale;
 import ru.volnenko.generator.data.GeneratorFirstNameMale;
 
@@ -23,12 +24,16 @@ public final class Generator {
         return new Date();
     }
 
+    public static String firstName() {
+        return GeneratorFirstName.getInstance().generate();
+    }
+
     public static String firstNameMale() {
-        return GeneratorFirstNameMale.generate();
+        return GeneratorFirstNameMale.getInstance().generate();
     }
 
     public static String firstNameFemale() {
-        return GeneratorFirstNameFemale.generate();
+        return GeneratorFirstNameFemale.getInstance().generate();
     }
 
 }
