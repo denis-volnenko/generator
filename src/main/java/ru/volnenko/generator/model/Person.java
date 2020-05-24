@@ -17,6 +17,13 @@ public class Person {
 
     private String lastName;
 
+    private String middleName;
+
     private Gender gender;
+
+    @Override
+    public String toString() {
+        return lastName + " " + firstName + " " + middleName;
+    }
 
 }

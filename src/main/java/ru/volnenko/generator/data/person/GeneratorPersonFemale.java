@@ -21,6 +21,7 @@ public final class GeneratorPersonFemale implements IGeneratorPerson {
         return new PersonBuilder().female()
                 .withFirstName(GeneratorFirstNameFemale.getInstance().generate())
                 .withLastName(GeneratorLastNameFemale.getInstance().generate())
+                .withMiddleName(GeneratorMiddleNameFemale.getInstance().generate())
                 .getPerson();
     }
 

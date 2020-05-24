@@ -32,8 +32,15 @@ public final class PersonBuilder {
         return this;
     }
 
+    @NonNull
     public PersonBuilder withLastName(@NonNull String lastName) {
         person.setLastName(lastName);
+        return this;
+    }
+
+    @NonNull
+    public PersonBuilder withMiddleName(@NonNull String middleName) {
+        person.setMiddleName(middleName);
         return this;
     }
 
