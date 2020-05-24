@@ -7,6 +7,11 @@ public final class PersonBuilder {
 
     private Person person = new Person();
 
+    public PersonBuilder withPerson(Person person) {
+        this.person = person;
+        return this;
+    }
+
     public PersonBuilder male() {
         person.setGender(Gender.MALE);
         return this;

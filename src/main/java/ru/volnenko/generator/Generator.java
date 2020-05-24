@@ -1,6 +1,7 @@
 package ru.volnenko.generator;
 
 import ru.volnenko.generator.data.person.*;
+import ru.volnenko.generator.model.Person;
 
 import java.util.Date;
 import java.util.UUID;
@@ -104,6 +105,30 @@ public final class Generator {
 
     public static String usualNameFemale() {
         return GeneratorUsualNameFemale.getInstance().generate();
+    }
+
+    /**
+     * Генерация случайной карточки
+     * @return
+     */
+    public static Person person() {
+        return GeneratorPerson.getInstance().generate();
+    }
+
+    /**
+     * Генерация мужской карточки
+     * @return
+     */
+    public static Person male() {
+        return GeneratorPersonMale.getInstance().generate();
+    }
+
+    /**
+     * Генерация женской карточки
+     * @return
+     */
+    public static Person female() {
+        return GeneratorPersonFemale.getInstance().generate();
     }
 
 }
