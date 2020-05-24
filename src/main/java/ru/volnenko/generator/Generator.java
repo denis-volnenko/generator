@@ -5,6 +5,9 @@ import java.util.UUID;
 
 public final class Generator {
 
+    private Generator() {
+    }
+
     public static String uuid() {
         return UUID.randomUUID().toString();
     }
