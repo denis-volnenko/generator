@@ -1,13 +1,13 @@
 package ru.volnenko.generator.data.person;
 
-import ru.volnenko.generator.api.GeneratorName;
+import ru.volnenko.generator.api.IGeneratorName;
 import ru.volnenko.generator.data.AbstractGeneratorName;
 
 public final class GeneratorUsualName extends AbstractGeneratorName {
 
     private static final GeneratorUsualName INSTANCE = new GeneratorUsualName();
 
-    private static final GeneratorName[] GENERATORS = new GeneratorName[] {
+    private static final IGeneratorName[] GENERATORS = new IGeneratorName[] {
             GeneratorUsualNameFemale.getInstance(),
             GeneratorUsualNameMale.getInstance()
     };
@@ -20,7 +20,7 @@ public final class GeneratorUsualName extends AbstractGeneratorName {
     }
 
     @Override
-    protected GeneratorName[] getGenerators() {
+    protected IGeneratorName[] getGenerators() {
         return GENERATORS;
     }
 

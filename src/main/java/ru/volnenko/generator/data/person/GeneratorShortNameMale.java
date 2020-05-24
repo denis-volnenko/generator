@@ -1,8 +1,8 @@
 package ru.volnenko.generator.data.person;
 
-import ru.volnenko.generator.api.GeneratorName;
+import ru.volnenko.generator.api.IGeneratorName;
 
-public final class GeneratorShortNameMale implements GeneratorName {
+public final class GeneratorShortNameMale implements IGeneratorName {
 
     private static final GeneratorShortNameMale INSTANCE = new GeneratorShortNameMale();
 
