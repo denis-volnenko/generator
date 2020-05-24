@@ -1,11 +1,11 @@
 package ru.volnenko.generator.data;
 
-import ru.volnenko.generator.api.IGenerator;
+import ru.volnenko.generator.api.GeneratorName;
 import ru.volnenko.generator.util.RandomUtil;
 
-public abstract class AbstractGeneratorName implements IGenerator<String> {
+public abstract class AbstractGeneratorName implements GeneratorName {
 
-    protected abstract IGenerator<String>[] getGenerators();
+    protected abstract GeneratorName[] getGenerators();
 
     @Override
     public String generate() {

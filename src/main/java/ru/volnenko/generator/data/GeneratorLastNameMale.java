@@ -1,9 +1,9 @@
 package ru.volnenko.generator.data;
 
-import ru.volnenko.generator.api.IGenerator;
+import ru.volnenko.generator.api.GeneratorName;
 import ru.volnenko.generator.util.RandomUtil;
 
-public final class GeneratorLastNameMale implements IGenerator<String> {
+public final class GeneratorLastNameMale implements GeneratorName {
 
     private static final GeneratorLastNameMale INSTANCE = new GeneratorLastNameMale();
 

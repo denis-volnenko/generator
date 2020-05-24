@@ -1,12 +1,13 @@
 package ru.volnenko.generator.data;
 
+import ru.volnenko.generator.api.GeneratorName;
 import ru.volnenko.generator.api.IGenerator;
 
-public final class GeneratorLastName extends AbstractGeneratorName implements IGenerator<String> {
+public final class GeneratorLastName extends AbstractGeneratorName {
 
     private static final GeneratorLastName INSTANCE = new GeneratorLastName();
 
-    private static final IGenerator<String>[] GENERATORS = new IGenerator[] {
+    private static final GeneratorName[] GENERATORS = new GeneratorName[] {
             GeneratorLastNameMale.getInstance(), GeneratorLastNameFemale.getInstance()
     };
 
@@ -15,7 +16,7 @@ public final class GeneratorLastName extends AbstractGeneratorName implements IG
     }
 
     @Override
-    protected IGenerator<String>[] getGenerators() {
+    protected GeneratorName[] getGenerators() {
         return GENERATORS;
     }
 

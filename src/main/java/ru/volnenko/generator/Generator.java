@@ -82,4 +82,16 @@ public final class Generator {
         return GeneratorLastNameFemale.getInstance().generate();
     }
 
+    public static String shortName() {
+        return GeneratorShortName.getInstance().generate();
+    }
+
+    public static String shortNameMale() {
+        return GeneratorShortNameMale.getInstance().generate();
+    }
+
+    public static String shortNameFemale() {
+        return GeneratorShortNameFemale.getInstance().generate();
+    }
+
 }
