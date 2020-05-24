@@ -2,8 +2,8 @@ package org.example;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.volnenko.generator.data.GeneratorFirstNameFemale;
-import ru.volnenko.generator.data.GeneratorFirstNameMale;
+import ru.volnenko.generator.data.person.GeneratorFirstNameFemale;
+import ru.volnenko.generator.data.person.GeneratorFirstNameMale;
 
 public class GeneratorFirstNameTest {
 

@@ -1,6 +1,6 @@
 package ru.volnenko.generator;
 
-import ru.volnenko.generator.data.*;
+import ru.volnenko.generator.data.person.*;
 
 import java.util.Date;
 import java.util.UUID;

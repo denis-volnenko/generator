@@ -1,7 +1,7 @@
-package ru.volnenko.generator.data;
+package ru.volnenko.generator.data.person;
 
 import ru.volnenko.generator.api.GeneratorName;
-import ru.volnenko.generator.api.IGenerator;
+import ru.volnenko.generator.data.AbstractGeneratorName;
 
 public final class GeneratorLastName extends AbstractGeneratorName {
 
