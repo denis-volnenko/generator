@@ -9,7 +9,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Person {
+public final class Person {
 
     private String id = UUID.randomUUID().toString();
 

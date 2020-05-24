@@ -1,4 +1,4 @@
-package org.example;
+package ru.volnenko.generator;
 
 import org.junit.Assert;
 import org.junit.Test;
