@@ -7,6 +7,11 @@ public final class RandomUtil {
     private RandomUtil() {
     }
 
+    public static <T> T random(T... values) {
+        final int index = RandomUtil.random(0, values.length -1);
+        return values[index];
+    }
+
     public static int random(int min, int max) {
         if (min >= max) throw new IllegalArgumentException("max must be greater than min");
         final Random random = new Random();
