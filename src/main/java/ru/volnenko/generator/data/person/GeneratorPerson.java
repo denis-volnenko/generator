@@ -5,6 +5,9 @@ import ru.volnenko.generator.api.IGeneratorPerson;
 import ru.volnenko.generator.model.Person;
 import ru.volnenko.generator.util.RandomUtil;
 
+/**
+ * Генератор случайной карточки
+ */
 public final class GeneratorPerson implements IGeneratorPerson {
 
     @NonNull

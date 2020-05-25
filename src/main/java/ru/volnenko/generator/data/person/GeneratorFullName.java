@@ -4,6 +4,9 @@ import lombok.NonNull;
 import ru.volnenko.generator.api.IGeneratorName;
 import ru.volnenko.generator.data.AbstractGeneratorName;
 
+/**
+ * Генератор случайного ФИО
+ */
 public final class GeneratorFullName extends AbstractGeneratorName {
 
     @NonNull

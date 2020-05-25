@@ -4,6 +4,9 @@ import lombok.NonNull;
 import ru.volnenko.generator.api.IGeneratorName;
 import ru.volnenko.generator.util.RandomUtil;
 
+/**
+ * Генератор случайного отчества
+ */
 public final class GeneratorMiddleName implements IGeneratorName {
 
     @NonNull
