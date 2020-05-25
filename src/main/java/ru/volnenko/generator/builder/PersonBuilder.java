@@ -1,6 +1,7 @@
 package ru.volnenko.generator.builder;
 
 import lombok.NonNull;
+import ru.volnenko.generator.data.person.GeneratorGender;
 import ru.volnenko.generator.model.Gender;
 import ru.volnenko.generator.model.Person;
 
@@ -10,6 +11,7 @@ public final class PersonBuilder {
     private Person person = new Person();
 
     public PersonBuilder withPerson(@NonNull Person person) {
+        if (person == null) throw new NullPointerException("Incorrect person value.");
         this.person = person;
         return this;
     }
@@ -27,15 +29,30 @@ public final class PersonBuilder {
     }
 
     @NonNull
+    public PersonBuilder withFirstName() {
+        return withFirstName(GeneratorGender.valueOf(person.getGender()).firstName().generate());
+    }
+
+    @NonNull
     public PersonBuilder withFirstName(@NonNull String firstName) {
         person.setFirstName(firstName);
         return this;
     }
 
     @NonNull
+    public PersonBuilder withLastName() {
+        return withLastName(GeneratorGender.valueOf(person.getGender()).lastName().generate());
+    }
+
+    @NonNull
     public PersonBuilder withLastName(@NonNull String lastName) {
         person.setLastName(lastName);
         return this;
+    }
+
+    @NonNull
+    public PersonBuilder withMiddleName() {
+        return withMiddleName(GeneratorGender.valueOf(person.getGender()).middleName().generate());
     }
 
     @NonNull

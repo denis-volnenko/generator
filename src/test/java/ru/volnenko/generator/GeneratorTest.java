@@ -11,4 +11,9 @@ public final class GeneratorTest {
         assertNotNull(Generator.uuid());
     }
 
+    @Test
+    public void test() {
+        System.out.println(Generator.fullName());
+    }
+
 }
