@@ -2,6 +2,7 @@ package ru.volnenko.generator.builder;
 
 import lombok.NonNull;
 import ru.volnenko.generator.data.person.GeneratorGender;
+import ru.volnenko.generator.error.GenderException;
 import ru.volnenko.generator.model.Gender;
 import ru.volnenko.generator.model.Person;
 
@@ -11,7 +12,7 @@ public final class PersonBuilder {
     private Person person = new Person();
 
     public PersonBuilder withPerson(@NonNull Person person) {
-        if (person == null) throw new NullPointerException("Incorrect person value.");
+        if (person == null) throw new GenderException();
         this.person = person;
         return this;
     }

@@ -2,6 +2,7 @@ package ru.volnenko.generator.data.person;
 
 import lombok.NonNull;
 import ru.volnenko.generator.api.IGeneratorGender;
+import ru.volnenko.generator.error.GenderException;
 import ru.volnenko.generator.model.Gender;
 
 public final class GeneratorGender {
@@ -18,7 +19,7 @@ public final class GeneratorGender {
     public static IGeneratorGender valueOf(@NonNull Gender gender) {
         if (Gender.MALE.equals(gender)) return GeneratorGenderMale.getInstance();
         if (Gender.FEMALE.equals(gender)) return GeneratorGenderFemale.getInstance();
-        throw new RuntimeException("Incorrect gender value.");
+        throw new GenderException();
     }
 
     @NonNull
