@@ -5,4 +5,4 @@ COPY /src/target/generator.jar /opt/generator.jar
 WORKDIR /opt
 
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "taildb.jar"]
+ENTRYPOINT ["java", "-jar", "generator.jar"]
