@@ -1,4 +1,4 @@
-package ru.volnenko.generator.server.model;
+package ru.volnenko.generator.server;
 
 public class GeneratorServer {
 
