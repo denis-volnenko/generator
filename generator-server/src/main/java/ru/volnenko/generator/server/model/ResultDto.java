@@ -2,15 +2,13 @@ package ru.volnenko.generator.server.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
 import lombok.Setter;
 
 @Getter
 @Setter
 @NoArgsConstructor
-public final class NameDto {
+public final class ResultDto {
 
-    @NonNull
-    private String name = "";
+    private boolean success;
 
 }
