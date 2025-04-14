@@ -2,6 +2,7 @@ package ru.volnenko.generator.server.controller;
 
 import lombok.NonNull;
 import ru.volnenko.generator.server.model.FullNameDto;
+import ru.volnenko.generator.server.model.NameDto;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -16,5 +17,10 @@ public interface IMaleController {
     @NonNull
     @Path("/full/name/one")
     FullNameDto generateOneFullNameMale();
+
+    @GET
+    @NonNull
+    @Path("/first/name/one")
+    NameDto generateOneFirstNameMale();
 
 }
