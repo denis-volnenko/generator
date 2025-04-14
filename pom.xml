@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.volnenko.generator</groupId>
-    <artifactId>generator-server</artifactId>
+    <artifactId>generator</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <developers>
         <developer>
@@ -22,5 +22,10 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <modules>
+        <module>generator-core</module>
+        <module>generator-server</module>
+    </modules>
 
 </project>
