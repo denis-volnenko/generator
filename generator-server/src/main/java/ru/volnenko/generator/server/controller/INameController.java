@@ -1,5 +1,7 @@
 package ru.volnenko.generator.server.controller;
 
+import lombok.NonNull;
+import ru.volnenko.generator.server.model.FullNameDto;
 import ru.volnenko.generator.server.model.ResultDto;
 
 import javax.ws.rs.GET;
@@ -12,7 +14,18 @@ import javax.ws.rs.core.MediaType;
 public interface INameController {
 
     @GET
+    @NonNull
     @Path("/ping")
     ResultDto ping();
+
+    @GET
+    @NonNull
+    @Path("/full/name/male/one")
+    FullNameDto generateOneFullNameMale();
+
+    @GET
+    @NonNull
+    @Path("/full/name/female/one")
+    FullNameDto generateOneFullNameFemale();
 
 }

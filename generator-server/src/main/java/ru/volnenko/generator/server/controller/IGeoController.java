@@ -1,5 +1,6 @@
 package ru.volnenko.generator.server.controller;
 
+import lombok.NonNull;
 import ru.volnenko.generator.server.model.NameDto;
 import ru.volnenko.generator.server.model.ResultDto;
 
@@ -13,15 +14,18 @@ import javax.ws.rs.core.MediaType;
 public interface IGeoController {
 
     @GET
+    @NonNull
     @Path("/ping")
     ResultDto ping();
 
     @GET
+    @NonNull
     @Path("/city/one/name")
     NameDto generateOneCityName();
 
     @GET
+    @NonNull
     @Path("/street/one/name")
-    public NameDto generateOneStreetName();
+    NameDto generateOneStreetName();
 
 }

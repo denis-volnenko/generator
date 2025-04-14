@@ -1,5 +1,6 @@
 package ru.volnenko.generator.server.controller.impl;
 
+import lombok.NonNull;
 import ru.volnenko.generator.server.controller.IGeoController;
 import ru.volnenko.generator.server.model.NameDto;
 import ru.volnenko.generator.server.model.ResultDto;
@@ -14,6 +15,7 @@ import javax.ws.rs.core.MediaType;
 public final class GeoController implements IGeoController {
 
     @GET
+    @NonNull
     @Override
     @Path("/ping")
     public ResultDto ping() {
@@ -21,6 +23,7 @@ public final class GeoController implements IGeoController {
     }
 
     @GET
+    @NonNull
     @Override
     @Path("/city/one/name")
     public NameDto generateOneCityName() {
@@ -28,6 +31,7 @@ public final class GeoController implements IGeoController {
     }
 
     @GET
+    @NonNull
     @Override
     @Path("/street/one/name")
     public NameDto generateOneStreetName() {
