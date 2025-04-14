@@ -1,5 +1,6 @@
-package ru.volnenko.generator.server.controller;
+package ru.volnenko.generator.server.controller.impl;
 
+import ru.volnenko.generator.server.controller.IGeoController;
 import ru.volnenko.generator.server.model.NameDto;
 import ru.volnenko.generator.server.model.ResultDto;
 
@@ -8,7 +9,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/geo/api/v1/")
+@Path("/generator/api/v1/geo/")
 @Produces(MediaType.APPLICATION_JSON)
 public final class GeoController implements IGeoController {
 
