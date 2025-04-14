@@ -1,7 +1,6 @@
 package ru.volnenko.generator.server.controller;
 
 import lombok.NonNull;
-import ru.volnenko.generator.server.model.FullNameDto;
 import ru.volnenko.generator.server.model.ResultDto;
 
 import javax.ws.rs.GET;
