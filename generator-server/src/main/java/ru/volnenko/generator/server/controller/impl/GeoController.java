@@ -38,4 +38,12 @@ public final class GeoController implements IGeoController {
         return new NameDto();
     }
 
+    @GET
+    @NonNull
+    @Override
+    @Path("/state/one/name")
+    public NameDto generateOneStateName() {
+        return null;
+    }
+
 }

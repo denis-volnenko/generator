@@ -28,4 +28,9 @@ public interface IGeoController {
     @Path("/street/one/name")
     NameDto generateOneStreetName();
 
+    @GET
+    @NonNull
+    @Path("/state/one/name")
+    NameDto generateOneStateName();
+
 }
