@@ -2,9 +2,9 @@ package ru.volnenko.generator;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.volnenko.generator.data.person.GeneratorFullName;
-import ru.volnenko.generator.data.person.GeneratorFullNameFemale;
-import ru.volnenko.generator.data.person.GeneratorFullNameMale;
+import ru.volnenko.generator.core.data.person.GeneratorFullName;
+import ru.volnenko.generator.core.data.person.GeneratorFullNameFemale;
+import ru.volnenko.generator.core.data.person.GeneratorFullNameMale;
 
 public final class GeneratorFullNameTest {
 

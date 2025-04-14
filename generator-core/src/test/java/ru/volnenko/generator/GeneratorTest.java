@@ -3,6 +3,7 @@ package ru.volnenko.generator;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
+import ru.volnenko.generator.core.Generator;
 
 public final class GeneratorTest {
 

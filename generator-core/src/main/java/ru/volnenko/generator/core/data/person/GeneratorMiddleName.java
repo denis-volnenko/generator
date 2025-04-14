@@ -1,0 +1,22 @@
+package ru.volnenko.generator.core.data.person;
+
+import lombok.NonNull;
+import ru.volnenko.generator.core.api.IGeneratorName;
+import ru.volnenko.generator.core.util.RandomUtil;
+
+/**
+ * Генератор случайного отчества
+ */
+public final class GeneratorMiddleName implements IGeneratorName {
+
+    @NonNull
+    private static final IGeneratorName[] GENERATORS = new IGeneratorName[] {
+            GeneratorMiddleNameFemale.getInstance(), GeneratorMiddleNameMale.getInstance(),
+    };
+
+    @Override
+    public String generate() {
+        return RandomUtil.random(GENERATORS).generate();
+    }
+
+}

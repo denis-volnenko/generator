@@ -2,7 +2,7 @@ package ru.volnenko.generator;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.volnenko.generator.data.person.*;
+import ru.volnenko.generator.core.data.person.*;
 
 public final class GeneratorLastNameTest {
 

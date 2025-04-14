@@ -2,8 +2,8 @@ package ru.volnenko.generator;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.volnenko.generator.data.person.GeneratorFirstNameFemale;
-import ru.volnenko.generator.data.person.GeneratorFirstNameMale;
+import ru.volnenko.generator.core.data.person.GeneratorFirstNameFemale;
+import ru.volnenko.generator.core.data.person.GeneratorFirstNameMale;
 
 public final class GeneratorFirstNameTest {
 
